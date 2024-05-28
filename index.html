@@ -1,17 +1,122 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>whoami</title>
+    <link href="css/hacker.css" rel="stylesheet">
+
+    <style>
+    .tall-row {
+        margin-top: 40px;
+    }
+    .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        z-index: 1;
+        display: block;
+    }
+    </style>
 </head>
+
 <body>
-    <h1>welcome to index, site is under construction...</h1>
-    <button><a href = "5fcbac7733c5d424269a1a93 8168e6fabb7644d3a35980529ada2f91.html">one</a></button>
-    <button><a href = "660bf27ccddae72ae250c008 e0fddcc58fc0499f9e9cf41598a9b837.html">two</a></button>
-    <button><a href = "663757a26b8bd8ddfe33c420 3815728a05434fe7878a65e3c7de9edb.html">three</a></button>
-    <button><a href = "662a73fda562ef06c3b52edc d11be0a1d43c41678802ff5eec32923f.html">four</a></button>
-    <button><a href = "65d46a4f6d3d2b1fef4be189 386c17871f934cd6bb7843cca76d9e15.html">five</a></button>
-    <button><a href = "659689f5eef082e477ff55fc 16a34ee57558476dbfe06cca6a6cee14.html">six</a></button>
+
+    
+
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">whoami</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">do_not_click<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Ooh a link</a></li>
+                            <li><a href="#">Two links?! Oh boy</a></li>
+                            <li><a href="#">Now you're being ridiculous</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Much Wow</li>
+                            <li><a href="#">So link</a></li>
+                            <li><a href="#">Many internet</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="row tall-row">
+            <div class="col-lg-12">
+                <h1>site still under construction..visit later fucktard.</h1>
+                <hr>
+            </div>
+        </div>
+        <!-- List Groups -->
+        <div class="row tall-row">
+            <div class="col-lg-12">
+                <h1>Crackme's</h1>
+                <hr>
+            </div>
+        </div>
+        <centre>
+        <div class="row">
+
+            <div class="col-lg-4">
+                <div class="list-group">
+                    <a href="5fcbac7733c5d424269a1a93 8168e6fabb7644d3a35980529ada2f91.html" class="list-group-item active">5fcbac7733c5d424269a1a93</a>
+                    <a href="660bf27ccddae72ae250c008 e0fddcc58fc0499f9e9cf41598a9b837.html" class="list-group-item">660bf27ccddae72ae250c008</a>
+                    <a href="662a73fda562ef06c3b52edc d11be0a1d43c41678802ff5eec32923f.html" class="list-group-item">662a73fda562ef06c3b52edc</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="list-group">
+                    <a href="663757a26b8bd8ddfe33c420 3815728a05434fe7878a65e3c7de9edb.html" class="list-group-item active">663757a26b8bd8ddfe33c420</a>
+                    <a href="663757a26b8bd8ddfe33c420 3815728a05434fe7878a65e3c7de9edb.html" class="list-group-item">663757a26b8bd8ddfe33c420</a>
+                    <a href="65d46a4f6d3d2b1fef4be189 386c17871f934cd6bb7843cca76d9e15.html" class="list-group-item">65d46a4f6d3d2b1fef4be189</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">coming soon</a>
+                    <a href="#" class="list-group-item">coming soon</a>
+                    <a href="#" class="list-group-item">coming soon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- Github stars script -->
+    <script>
+    $(document).ready(function(){
+        $.getJSON("https://api.github.com/repos/Bachittarjeet/Hacker-Bootstrap-Template/", function(data){
+            var stars = data['stargazers_count'];
+            $("#stars").text(stars + " stars");
+        });
+    });
+    </script>
+
 </body>
 </html>
