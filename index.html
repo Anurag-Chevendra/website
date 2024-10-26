@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>whoami</title>
+    <link href="css/hacker.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
+
+    <style>
+    .tall-row {
+        margin-top: 40px;
+    }
+    .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        z-index: 1;
+        display: block;
+    }
+    div.solid {border-style: solid; padding: 20px;}
+    .hov {  
+        
+        border: none;
+        opacity: 5;
+        transition: 0.3s;}
+
+    .hov:hover {opacity:3;background: #000;}
+    </style>
+</head>
+
+<body>
+
+    
+
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="profile.html">Profile</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">button_not_working<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="">Ooh a link</a></li>
+                            <li><a href="#">Two links?! Oh boy</a></li>
+                            <li><a href="#">Now you're being ridiculous</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Much Wow</li>
+                            <li><a href="#">So link</a></li>
+                            <li><a href="#">Many internet</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="row tall-row">
+            <div class="col-lg-12">
+                <h1>Whoami</h1>
+                <hr>
+                <p>Hello, I am Anurag Chevendra.</p>
+                <p>I'm a Offensive security professional with focus in system internals and administration. Currently I'm working at Pelorus as a Windows Reverse Engineer. I've experience in both IT as well as OT security domain's. You can check out my work over <a href="#">here</a>.</a></p>
+                <p>TimeLine:</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                      <div class="timeline-content">
+                        <div class="timeline-date">2017</div>
+                        <div class="timeline-description">ICSE, Hiranandani Foundation School, Thane</div>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-content">
+                        <div class="timeline-date">2019</div>
+                        <div class="timeline-description">ISC, Hiranandani Foundation School, Thane</div>
+                        <div class="timeline-description">B.Tech in Electrical Engineering, V.J.T.I, &nbsp; Mumbai</div>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-content">
+                        <div class="timeline-date">2021</div>
+                        <div class="timeline-description">IEEE VJTI - Intern</div>
+                        <div class="timeline-description">Angel Xpress Foundation - Math Teacher</div>
+                        <div class="timeline-description">Center of Excellence in Complex and Non-Lin ear Dynamical Systems, V.J.T.I - Security Intern</div>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                          <div class="timeline-date">2022</div>
+                          <div class="timeline-description">Eaton India Innovation Center, Pune - Secur ity Intern</div>
+                          <div class="timeline-description">Center of Excellence in Complex and Non-Lin ear Dynamical Systems, V.J.T.I - Security Intern</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                          <div class="timeline-date">2023</div>
+                          <div class="timeline-description">Pelorus Technoligies, Mumbai - Windows Reve rse Engineer</div>
+                          <div class="timeline-description">Center of Excellence in Complex and Non-Lin ear Dynamical Systems, V.J.T.I - Security Intern</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                          <div class="timeline-date">2024</div>
+                          <div class="timeline-description">Pelorus Technoligies, Mumbai - Windows Reve rse Engineer</div>
+                          <div class="timeline-description">Center of Excellence in Complex and Non-Lin ear Dynamical Systems, V.J.T.I - Security Intern</div>
+                        </div>
+                    </div>
+                  <!-- Add more events if needed -->
+                </div>
+                
+                
+                
+                <p>My Socials:
+                    <br>
+                    <a href="https://www.linkedin.com/in/anurag-chevendra/">Linkedin</a>
+                    <br>
+                    <a>anuragmchevendra@gmail.com</a>
+                    <br>
+                    <a href="https://github.com/Anurag-Chevendras">Github</a>
+                </p>
+            </div>
+        </div>
+
+</br>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- Github stars script -->
+    <script>
+    $(document).ready(function(){
+        $.getJSON("https://api.github.com/repos/Bachittarjeet/Hacker-Bootstrap-Template/", function(data){
+            var stars = data['stargazers_count'];
+            $("#stars").text(stars + " stars");
+        });
+    });
+    </script>
+
+</body>
+</html>
