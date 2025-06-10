@@ -10,8 +10,8 @@
   position: absolute;
   width: 2px;
   background-color: #000;
-  top: 0;
-  bottom: 0;
+  top: 50px;
+  bottom: 150px;
   left: 0%;
   margin-left: -1px;
 }
